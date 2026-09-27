@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "京东国补监控",
+  "version": "1.1.0",
+  "description": "每分钟检测京东商品详情页是否有国补，有则弹通知提醒",
+  "permissions": ["notifications", "storage"],
+  "host_permissions": ["https://sctapi.ftqq.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://item.jd.com/*.html*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
