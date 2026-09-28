@@ -18,11 +18,11 @@
   // ===== 配置区：按需修改 =====
   // Server酱 SendKey，用于微信推送。留空则只弹浏览器通知不推微信。
   // 获取方式：打开 https://sct.ftqq.com/ 微信扫码登录，复制 SendKey
-  const SERVERCHAN_SENDKEY = '';
+  const SERVERCHAN_SENDKEY = 'SCT428806TqAijeFI8xWdFg79IyT9b5ynN';
 
   const RENDER_DELAY_MS = 10 * 1000;       // 首次运行前等页面渲染
-  const CHECK_INTERVAL_MIN = 20;           // 检测间隔下限（分钟）
-  const CHECK_INTERVAL_MAX = 30;           // 检测间隔上限（分钟）
+  const CHECK_INTERVAL_MIN = 3;           // 检测间隔下限（分钟）
+  const CHECK_INTERVAL_MAX = 10;           // 检测间隔上限（分钟）
 
   // ===== 以下无需修改 =====
   const SUBSIDY_RE = /领后减[¥￥]\s*([\d.]+)/;
